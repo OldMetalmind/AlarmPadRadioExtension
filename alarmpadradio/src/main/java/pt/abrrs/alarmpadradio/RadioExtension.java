@@ -15,7 +15,5 @@ public class RadioExtension extends MindMeExtension
         Intent intent = new Intent();
         intent.setAction(BROADCAST_ACTION_RADIO_STOP);
         sendBroadcast(intent);
-
-        publishUpdate(null);
     }
 }

@@ -100,7 +100,7 @@ public class RadioAlarmPadBroadcastReceiver extends BroadcastReceiver
 
     private void stopRadio()
     {
-        if(_player != null && _player.isPlaying())
+        if(_player != null)
         {
             _player.stop();
             _player.release();
