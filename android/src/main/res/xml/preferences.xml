@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:summary="@string/preference_connection_summary"
+        android:title="@string/preference_connection_title"
+        >
+        <CheckBoxPreference
+            android:key="@string/PREFERENCE_KEY_WIFI"
+            android:title="@string/preference_connection_wireless_title"
+            android:summary="@string/preference_connection_wireless_summary"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="Various web radio stations"
+        android:title="Radio stations"
+        >
+        <ListPreference
+            android:entries="@array/radioListOptions"
+            android:entryValues="@array/radioListValues"
+            android:key="@string/PREFERENCE_KEY_RADIO"
+            android:summary="@string/preference_radio_summary"
+            android:title="@string/preference_radio_title"
+            android:defaultValue="0"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.abrrs.alarmpadradio">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        >
+
+        <service
+            android:name=".RadioExtension"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:permission="com.mindmeapp.extensions.permission.READ_EXTENSION_DATA">
+            <intent-filter>
+                <action android:name="com.mindmeapp.extensions.Extension" />
+            </intent-filter>
+            <meta-data android:name="protocolVersion" android:value="1" />
+            <meta-data android:name="worldReadable" android:value="true" />
+            <meta-data android:name="description" android:value="@string/app_name" />
+            <meta-data android:name="settingsActivity" android:value=".RadioSettingsActivity" />
+        </service>
+
+        <activity
+            android:name=".RadioSettingsActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            />
+
+        <receiver android:name=".RadioAlarmPadBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.mindmeapp.alarm.ALARM_START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pt.abrrs.mindmeapp.alarm.ALARM_STOP" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

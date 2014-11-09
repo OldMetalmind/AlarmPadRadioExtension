@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Alarm Pad Radio</string>
+
+
+    <string name="preference_connection_wireless_title">Wireless</string>
+    <string name="preference_connection_wireless_summary">Uses only the wireless.</string>
+    <string name="preference_connection_summary">Internet connection various options</string>
+    <string name="preference_connection_title">Connection</string>
+    <string name="preference_radio_title">Radios</string>
+    <string name="preference_radio_summary">List of existing radios</string>
+    <string name="toast_no_connection">No valid internet connection available.</string>
+    <string name="PREFERENCE_KEY_WIFI">preference_connection_wireless</string>
+    <string name="PREFERENCE_KEY_RADIO">preferencekeyradio</string>
+</resources>
