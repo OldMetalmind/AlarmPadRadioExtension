@@ -2,3 +2,4 @@
 android.iml
 proguard-rules.pro
 /src/main/AndroidManifest.xml
+src/main/java/pt/abrrs/alarmpadradio/dirble

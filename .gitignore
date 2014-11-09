@@ -10,3 +10,5 @@ settings.gradle
 /.gradle
 /.idea
 android/proguard-rules.pro
+alarmpadradio/files.txt
+alarmpadradio/release_apk
